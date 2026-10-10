@@ -1,0 +1,10 @@
+const phone = '5516981223087';
+const message = 'Olá! Vim pelo site da Barbearia Feitoza e gostaria de consultar os horários disponíveis para agendamento.';
+document.querySelectorAll('[data-whatsapp]').forEach((link) => link.href = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`);
+document.getElementById('year').textContent = new Date().getFullYear();
+const menuButton = document.querySelector('.menu-button');
+const menu = document.getElementById('menu');
+menuButton.addEventListener('click', () => { const open = menu.classList.toggle('open'); menuButton.setAttribute('aria-expanded', String(open)); menuButton.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu'); });
+menu.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => { menu.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); menuButton.setAttribute('aria-label', 'Abrir menu'); }));
+const observer = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }), { threshold: .12 });
+document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));

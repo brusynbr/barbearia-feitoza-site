@@ -32,4 +32,8 @@ Foram incluídas duas imagens demonstrativas geradas para composição visual. E
 
 ## Publicação na Vercel
 
-O repositório público foi criado em https://github.com/brusynbr/barbearia-feitoza-site e a implantação de produção foi solicitada à Vercel. Não há dependências, variáveis de ambiente ou comando de build.
+Repositório público: https://github.com/brusynbr/barbearia-feitoza-site
+
+Site público: https://barbearia-feitoza-site-brusyn.vercel.app
+
+A URL pública foi aberta e validada sem autenticação. Não há dependências, variáveis de ambiente ou comando de build.
